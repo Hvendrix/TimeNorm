@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TimeNorm</string>
+    <string name="Operation1">Выгрузка товара</string>
+
+    <string-array name="operations_array">
+        <item>Выгрузка</item>
+        <item>Погрузка</item>
+    </string-array>
+
+</resources>

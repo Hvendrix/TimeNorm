@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:fillViewport="true"
+
+
+        >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="тест"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCardId"
+                    android:layout_weight="3"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:text="тест"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBU"
+                    android:layout_weight="3"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:text="тест"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtData"
+                    android:layout_weight="3"
+                    android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:text="тест"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOper1"
+                    android:layout_weight="4"
+                    android:textSize="14sp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStart1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStop1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReset1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chron1" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEditTxt1"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTime1"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCommTxt1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:text="тест"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOper2"
+                    android:layout_weight="4"
+                    android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStart2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStop2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReset2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chron2" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEditTxt2"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTime2"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCommTxt2"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit1"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit1" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit1"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit1"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit2"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit2" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit2"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit2"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm2"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        //дальше жесть
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit3"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit3" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit3"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit3"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm3"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit4"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit4" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit4"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit4"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm4"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit5"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit5" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit5"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit5"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm5"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit6"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit6" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit6"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit6"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm6"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit7"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit7" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit7"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit7"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm7"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit8"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit8" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit8"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit8"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm8"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit9"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit9" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit9"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit9"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm9"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOperEdit10"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Введите операцию" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEdit10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_start_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStopEdit10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_stop_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnResetEdit10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_reset_button" />
+
+            <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="36dp"
+                    android:id="@+id/chronEdit10" />
+
+            <EditText
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/countEdit10"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+            <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDeltaTimeEdit10"
+                    android:text="0"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnComm10"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+        //жесть заканчивается
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="История замеров"
+                    android:padding="15dp" />
+
+
+            <Button
+                    android:text="Отправить"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sendBtn"
+                    android:layout_weight="1" />
+
+            <EditText
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtComment"
+                    android:layout_weight="4"
+                    android:textSize="14sp"
+                    android:hint="Напишите комментарии" />
+
+            <ImageButton
+                    android:id="@+id/ClearButton"
+                    android:text="ClearBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clear"
+                    android:src="@android:drawable/ic_notification_clear_all" />
+
+
+        </LinearLayout>
+
+
+        //мой Grid
+
+        <com.example.timenorm.grids.ExpandableHeightGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:id="@+id/gridView"
+                android:isScrollContainer="false" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/table_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+
+                    />
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</ScrollView>
